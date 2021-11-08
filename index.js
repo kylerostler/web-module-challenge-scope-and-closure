@@ -158,7 +158,7 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(getScoreCB, inningCB, number) {
+function scoreboard(getScorecb, inningcb, number) {
   // make an array to push results to
   let newScoreBoard = [];
   // make a loop that goes over the number of innings and creates a score for each inning
@@ -166,8 +166,8 @@ function scoreboard(getScoreCB, inningCB, number) {
   let awayScore = 0;
   for(let i = 0; i < number; i++){
     //take the score at each inning
-    homeScore = homeScore + inning();
-    awayScore = homeScore + inning();
+    homeScore = homeScore + inningcb();
+    awayScore = awayScore + inningcb();
     newScoreBoard.push(homeScore, awayScore);
   }
   // return an array with results from each inning
