@@ -61,6 +61,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+closure is when a function looks outside of itself to look for something defined in the outer scope
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,9 +83,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+when you go to log the result, because the name is defined outside the function
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+the name is always the same but the roll is different
 c. What is the lexical scope of `newRoll`? 
-
+return function
 
 ### Task 3 - Stretch Goals
 
